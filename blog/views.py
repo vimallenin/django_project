@@ -15,7 +15,7 @@ def index(request):
     context = {
         'posts': Post.objects.all()
     }
-    return render(request, 'blog/home.html', context)
+    return render(request, 'blog/index.html', context)
 
 
 class PostListView(ListView):
